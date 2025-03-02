@@ -38,7 +38,9 @@ Installation
 
 
 Usage:
+
 For Gang Members:
+
     1. Stealing a Vehicle:
         ● Enter an NPC vehicle.
         ● Use the /stealvehicle command to initiate the theft process.
