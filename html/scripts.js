@@ -21,7 +21,7 @@ function initializeChart() {
             labels: ['Speed', 'Acceleration', 'Braking', 'Handling', 'Overall'],
             datasets: [{
                 label: 'Vehicle Statistics',
-                data: [89.07, 56.00, 30.67, 100.00, 68.93],
+                data: [89.07, 56.00, 30.67, 100.00, 68.93], // This data is hardcoded for now, but will be taken from the database in the future
                 borderColor: '#00FF00',
                 backgroundColor: 'rgba(0, 255, 0, 0.1)',
                 pointBackgroundColor: '#B9FF66',
@@ -76,6 +76,7 @@ function loadCategories(categories) {
 
 // Function to load vehicles for a specific category
 function loadVehicles(category) {
+    // Fetch vehicles from the server
     fetch(`https://yourresource/getVehicles?category=${category}`)
         .then(response => response.json())
         .then(data => {
@@ -124,10 +125,3 @@ function buyVehicle() {
         body: JSON.stringify({ vehicle: vehicleName })
     });
 }
-
-// Listen for NUI messages from the client script
-window.addEventListener('message', function(event) {
-    if (event.data.action === 'openMenu') {
-        document.getElementById('blackMarketMain').style.display = 'block';
-    }
-});
