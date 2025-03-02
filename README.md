@@ -43,7 +43,6 @@ For Gang Members:
         ● Enter an NPC vehicle.
         ● Use the /stealvehicle command to initiate the theft process.
         ● A notification will be sent to the police, and a timer will start.
-
     2. Selling the Vehicle:
         ● Once the timer expires, drive the vehicle to the black market location.
         ● Interact with the black market NPC or terminal to sell the vehicle.
